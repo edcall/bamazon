@@ -23,7 +23,7 @@ var connection = mysql.createConnection({
   user: "root",
 
   // Your password
-  password: "Babyheri20!9",
+  password: "password",
   database: "bamazonDB"
 });
 
@@ -42,4 +42,4 @@ function start_app() {
     for (var i = 0; i < res.length; i++) {
       table.push([res[i].item_id, res[i].product_name, res[i].price.toFixed(2), res[i].stock_quantity])
     }
-    console.log(table.toString());
+    console.log(table.toString())
